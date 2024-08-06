@@ -1,0 +1,52 @@
+/* Shimmer.css */
+.shimmer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shimmer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 8px;
+}
+
+.shimmer {
+  background: #e0e0e0;
+  background-image: linear-gradient(to right, #e0e0e0 0%, #d1d1d1 20%, #e0e0e0 40%, #e0e0e0 100%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+  height: 1rem;
+  width: 50%;
+}
+
+.shimmer-title {
+  width: 50%;
+  height: 1rem;
+}
+
+.shimmer-temperature {
+  width: 30%;
+  height: 1.5rem;
+}
+
+.shimmer-day {
+  width: 70%;
+  height: 1rem;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}

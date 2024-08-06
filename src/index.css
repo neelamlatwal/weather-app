@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sunny {
+  background-image: url("../public/assets/sunny.webp")
+}
+
+.rainy {
+  background-image: url("../public/assets/rainy.png")
+}
+
+.cloudy {
+  background-image: url("../public/assets/cloudy.jpg")
+}
+
+.snowy {
+  background: linear-gradient(to right, #e6e9f0, #eef1f5);
+}
+.clear-night{
+  background-image:url("../public/assets/night.jpg") ;
+}
+.weather-bar {
+  padding-top: 2rem;
+}
+
+.weather-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+
+  color: #fff;
+  display: flex;
+  /* justify-content: center; */
+  width: 100vw;
+
+}
+
+.main-section {
+  margin-top: 3rem;
+  width: 75%;
+}
+
+.bg-blur {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: blur(.5em);
+  background-color: hsla(0, 0%, 100%, .04);
+  padding: 0rem 3rem;
+  text-align: left;
+  border-left: 5px solid hsla(0, 0%, 100%, .14);
+
+}
+
+.top-weather-section .heading-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.top-weather-section .temperature-text {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-type {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.pressure-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.margin-block-end-10 {
+  margin-bottom: 3rem;
+
+}
